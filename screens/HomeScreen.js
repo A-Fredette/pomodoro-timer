@@ -1,3 +1,4 @@
+import { AppRegistry } from "react-native";
 import React from 'react';
 import {
   Image,
@@ -12,7 +13,8 @@ import { WebBrowser } from 'expo';
 
 import { MonoText } from '../components/StyledText';
 
-import Header from '../components/header';
+import Header from '../components/Header';
+import Timer from '../components/Timer';
 
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
@@ -23,6 +25,7 @@ export default class HomeScreen extends React.Component {
     return (
       <View style={styles.container}>
         <Header />
+        <Timer />
         <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
           <View style={styles.welcomeContainer}>
             <Image
